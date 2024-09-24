@@ -21,6 +21,11 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     margin: auto; /* Center the desktop layout */
+    transition: all 0.5s ease; /* Smooth transition */
+}
+
+.desktop:hover {
+    transform: scale(1.02); /* Slightly scale on hover */
 }
 
 .parent {
@@ -57,11 +62,12 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     height: 195px;
     filter: brightness(150%);
-    transition: transform 0.3s;
+    transition: transform 0.3s, filter 0.3s; /* Added filter transition */
 }
 
 .picture:hover {
     transform: scale(1.05);
+    filter: brightness(100%); /* Change brightness on hover */
 }
 
 .buttons {
@@ -91,7 +97,7 @@ body {
     margin: 8px 0; /* Standard margin for buttons */
     border-radius: 20px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Button transitions */
     text-align: left; /* Align text to the left */
 }
 
